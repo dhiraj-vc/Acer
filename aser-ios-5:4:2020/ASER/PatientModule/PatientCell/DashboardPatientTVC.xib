@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DashboardPatientTVC" rowHeight="33" id="KGk-i7-Jjw" customClass="DashboardPatientTVC" customModule="ASER" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="426" height="62.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdQ-ES-zb5">
+                        <rect key="frame" x="0.0" y="0.0" width="426" height="62.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appointments" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xvw-TJ-mv7">
+                                <rect key="frame" x="16" y="23.5" width="349" height="18"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTQ-5d-Dwd">
+                                <rect key="frame" x="375" y="15" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="0Gk-1o-VHg"/>
+                                    <constraint firstAttribute="width" constant="35" id="Xoq-YO-cwn"/>
+                                </constraints>
+                                <state key="normal" image="ic_next"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6p8-FH-Zcw">
+                                <rect key="frame" x="0.0" y="61.5" width="426" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ua7-Jy-FgZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="0.050836267605633804" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mTQ-5d-Dwd" firstAttribute="leading" secondItem="Xvw-TJ-mv7" secondAttribute="trailing" constant="10" id="Dof-Yd-H8t"/>
+                            <constraint firstItem="6p8-FH-Zcw" firstAttribute="leading" secondItem="cdQ-ES-zb5" secondAttribute="leading" id="HPB-lW-qse"/>
+                            <constraint firstAttribute="trailing" secondItem="mTQ-5d-Dwd" secondAttribute="trailing" constant="16" id="IGk-X8-bqB"/>
+                            <constraint firstItem="Xvw-TJ-mv7" firstAttribute="centerY" secondItem="cdQ-ES-zb5" secondAttribute="centerY" constant="1.25" id="K8j-8V-G2L"/>
+                            <constraint firstItem="Xvw-TJ-mv7" firstAttribute="leading" secondItem="cdQ-ES-zb5" secondAttribute="leading" constant="16" id="LiT-T2-eEt"/>
+                            <constraint firstItem="mTQ-5d-Dwd" firstAttribute="centerY" secondItem="Xvw-TJ-mv7" secondAttribute="centerY" id="VYe-EO-KcU"/>
+                            <constraint firstAttribute="trailing" secondItem="6p8-FH-Zcw" secondAttribute="trailing" id="W0S-1Q-YEb"/>
+                            <constraint firstAttribute="bottom" secondItem="6p8-FH-Zcw" secondAttribute="bottom" id="pgg-wT-h4O"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cdQ-ES-zb5" secondAttribute="bottom" id="8IT-xM-1H6"/>
+                    <constraint firstItem="cdQ-ES-zb5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BcM-4F-VyT"/>
+                    <constraint firstItem="cdQ-ES-zb5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kz6-ib-MOc"/>
+                    <constraint firstAttribute="trailing" secondItem="cdQ-ES-zb5" secondAttribute="trailing" id="xqB-mT-kV3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbldashboardOptions" destination="Xvw-TJ-mv7" id="8Lo-Eh-wQK"/>
+            </connections>
+            <point key="canvasLocation" x="-841.60000000000002" y="270.31484257871068"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_next" width="13.5" height="25.5"/>
+    </resources>
+</document>

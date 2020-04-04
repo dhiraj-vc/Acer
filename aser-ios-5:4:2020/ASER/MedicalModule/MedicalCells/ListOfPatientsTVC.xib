@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ListOfPatientsTVC" rowHeight="94" id="KGk-i7-Jjw" customClass="ListOfPatientsTVC" customModule="ASER" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="93.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOU-Be-ySp">
+                        <rect key="frame" x="10" y="10" width="311" height="73.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_profile-1" translatesAutoresizingMaskIntoConstraints="NO" id="hbG-Ak-B5I">
+                                <rect key="frame" x="10" y="12" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Enz-Oa-erv"/>
+                                    <constraint firstAttribute="height" constant="50" id="LFL-gX-G5e"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.48627450980392156" green="0.0" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Smith" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wh9-Df-81U">
+                                <rect key="frame" x="70" y="5" width="160" height="63.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Etc-7j-Www">
+                                <rect key="frame" x="238" y="22" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZLe-i0-IpZ"/>
+                                    <constraint firstAttribute="width" constant="30" id="y4P-PV-Qpg"/>
+                                </constraints>
+                                <state key="normal" image="ic_chat_red"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9j-A0-RXu">
+                                <rect key="frame" x="276" y="21" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Mim-Z4-6IL"/>
+                                    <constraint firstAttribute="width" constant="30" id="d8l-9C-FhP"/>
+                                </constraints>
+                                <state key="normal" image="ic_delete"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hbG-Ak-B5I" firstAttribute="centerY" secondItem="jOU-Be-ySp" secondAttribute="centerY" id="0Ua-sd-FTI"/>
+                            <constraint firstItem="hbG-Ak-B5I" firstAttribute="leading" secondItem="jOU-Be-ySp" secondAttribute="leading" constant="10" id="FxS-ia-IWW"/>
+                            <constraint firstItem="Etc-7j-Www" firstAttribute="top" secondItem="jOU-Be-ySp" secondAttribute="top" constant="22" id="LeZ-VL-0xn"/>
+                            <constraint firstAttribute="trailing" secondItem="F9j-A0-RXu" secondAttribute="trailing" constant="5" id="QhP-Cg-MP6"/>
+                            <constraint firstItem="wh9-Df-81U" firstAttribute="leading" secondItem="hbG-Ak-B5I" secondAttribute="trailing" constant="10" id="T9x-8k-jQK"/>
+                            <constraint firstItem="F9j-A0-RXu" firstAttribute="top" secondItem="jOU-Be-ySp" secondAttribute="top" constant="21" id="cM1-UF-fG9"/>
+                            <constraint firstItem="Etc-7j-Www" firstAttribute="leading" secondItem="wh9-Df-81U" secondAttribute="trailing" constant="8" id="gug-p3-RJR"/>
+                            <constraint firstAttribute="bottom" secondItem="wh9-Df-81U" secondAttribute="bottom" constant="5" id="i9N-tT-xQi"/>
+                            <constraint firstItem="F9j-A0-RXu" firstAttribute="leading" secondItem="Etc-7j-Www" secondAttribute="trailing" constant="8" id="lfe-Kk-4He"/>
+                            <constraint firstItem="wh9-Df-81U" firstAttribute="top" secondItem="jOU-Be-ySp" secondAttribute="top" constant="5" id="x6Q-Ze-9Ha"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="0.29999999999999999"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.29999999999999999"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.29999999999999999" height="0.29999999999999999"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jOU-Be-ySp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Zhn-Hv-77E"/>
+                    <constraint firstItem="jOU-Be-ySp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="swF-eJ-juZ"/>
+                    <constraint firstAttribute="bottom" secondItem="jOU-Be-ySp" secondAttribute="bottom" constant="10" id="tis-qG-jw9"/>
+                    <constraint firstAttribute="trailing" secondItem="jOU-Be-ySp" secondAttribute="trailing" constant="10" id="yh7-gb-MSu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnMsgChat" destination="Etc-7j-Www" id="tMG-xu-NpB"/>
+                <outlet property="deleteBtn" destination="F9j-A0-RXu" id="1pb-3C-pOp"/>
+                <outlet property="imgVwPatients" destination="hbG-Ak-B5I" id="l0g-FF-MHA"/>
+                <outlet property="lblPatientsName" destination="wh9-Df-81U" id="eB4-SO-gH3"/>
+            </connections>
+            <point key="canvasLocation" x="37.600000000000001" y="92.653673163418304"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_chat_red" width="35.5" height="30"/>
+        <image name="ic_delete" width="22.5" height="28"/>
+        <image name="ic_profile-1" width="170.5" height="170.5"/>
+    </resources>
+</document>

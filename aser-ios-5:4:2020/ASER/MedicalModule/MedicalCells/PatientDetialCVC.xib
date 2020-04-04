@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PatientDetialCVC" id="gTV-IL-0wX" customClass="PatientDetialCVC" customModule="ASER" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="438" height="398"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="438" height="398"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULp-Yz-8H1">
+                        <rect key="frame" x="5" y="5" width="428" height="388"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_report" translatesAutoresizingMaskIntoConstraints="NO" id="dDi-fR-sLj">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="388"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6J-mP-ZNA">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="388"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dDi-fR-sLj" secondAttribute="trailing" id="6X9-VT-PSC"/>
+                            <constraint firstAttribute="bottom" secondItem="dDi-fR-sLj" secondAttribute="bottom" id="6aT-Ps-n4o"/>
+                            <constraint firstItem="P6J-mP-ZNA" firstAttribute="top" secondItem="ULp-Yz-8H1" secondAttribute="top" id="AJ0-CO-EJT"/>
+                            <constraint firstAttribute="trailing" secondItem="P6J-mP-ZNA" secondAttribute="trailing" id="Puh-dZ-hDZ"/>
+                            <constraint firstItem="dDi-fR-sLj" firstAttribute="top" secondItem="ULp-Yz-8H1" secondAttribute="top" id="SJD-GO-BtE"/>
+                            <constraint firstItem="dDi-fR-sLj" firstAttribute="leading" secondItem="ULp-Yz-8H1" secondAttribute="leading" id="bxs-v5-BCl"/>
+                            <constraint firstAttribute="bottom" secondItem="P6J-mP-ZNA" secondAttribute="bottom" id="qto-af-EvJ"/>
+                            <constraint firstItem="P6J-mP-ZNA" firstAttribute="leading" secondItem="ULp-Yz-8H1" secondAttribute="leading" id="suz-09-AAu"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ULp-Yz-8H1" secondAttribute="trailing" constant="5" id="2Xj-pw-YqY"/>
+                <constraint firstAttribute="bottom" secondItem="ULp-Yz-8H1" secondAttribute="bottom" constant="5" id="K05-Hd-j9q"/>
+                <constraint firstItem="ULp-Yz-8H1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Myl-E5-Z4r"/>
+                <constraint firstItem="ULp-Yz-8H1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="wVO-gQ-cgd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="438" height="398"/>
+            <connections>
+                <outlet property="btnImgPreview" destination="P6J-mP-ZNA" id="sx4-ky-AhQ"/>
+                <outlet property="imgReports" destination="dDi-fR-sLj" id="gsr-2A-7rd"/>
+            </connections>
+            <point key="canvasLocation" x="-156" y="-247"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_report" width="197.25" height="244.5"/>
+    </resources>
+</document>
